@@ -1,0 +1,40 @@
+{% extends 'base.html' %} {% block title %}Wishlists{% endblock title %} {%
+block content %}
+<div class="row justify-content-md-center my-6">
+    <div class="col-md-7 col-lg-5">
+        <h1 class="display-1 text-center mb-5">Wishlists</h1>
+        {% if wishlists %}
+        <a
+            href="/users/{{user.id}}/wishlists/create"
+            class="btn btn-primary mb-3"
+            >Create Wishlist</a
+        >
+        {% for wishlist in wishlists %}
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">{{wishlist.name}}</h5>
+                <p class="card-text">{{wishlist.description}}</p>
+                <div class="d-flex gap-3">
+                    <a
+                        href="/users/{{user.id}}/wishlists/{{wishlist.name}}/products"
+                        class="btn btn-primary"
+                        >Go to {{wishlist.name}}</a
+                    >
+                    <form
+                        action="/users/{{user.id}}/wishlists/{{wishlist.name}}/delete"
+                        method="POST"
+                    >
+                        <button class="btn btn-danger">Delete</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        {% endfor %} {% else %}
+        <p class="lead text-center">
+            No wishlists yet.
+            <a href="/users/{{user.id}}/wishlists/create">Create one here!</a>
+        </p>
+        {% endif %}
+    </div>
+</div>
+{% endblock content %}

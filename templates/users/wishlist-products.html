@@ -1,0 +1,33 @@
+{% extends 'base.html' %} {% block title %}{{wishlist.name}} | Products{%
+endblock title %} {% block content %}
+<h1 class="display-1 text-center mb-5">{{wishlist.name}}</h1>
+<div class="mt-5 row">
+    {% if products %} {% for product in products %}
+    <div class="col-12 col-sm-6 col-md-4 mb-4">
+        <div class="card">
+            <img src="{{product.image_url}}" alt="" class="card-img-top" />
+            <div class="card-body">
+                <h5 class="card-title">{{product.title}}</h5>
+                <p class="card-text">{{product.currency}} {{product.price}}</p>
+                <div class="d-flex gap-3">
+                    <a
+                        href="{{product.product_url}}"
+                        target="_blank"
+                        class="btn btn-primary"
+                        >Buy on eBay</a
+                    >
+                    <form
+                        action="/users/{{g.user.id}}/wishlists/{{wishlist.name}}/products/{{product.id}}/delete"
+                        method="POST"
+                    >
+                        <button class="btn btn-danger">Delete</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %} {% else %}
+    <p class="lead text-center">There are no products in this wishlist.</p>
+    {% endif %}
+</div>
+{% endblock content %}

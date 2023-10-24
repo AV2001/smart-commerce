@@ -1,0 +1,49 @@
+{% extends 'base.html' %} {% block title %}Search Products {% endblock title %}
+{% block content %}
+<div class="row my-6">
+    <h1 class="display-1 text-center mb-5">Search</h1>
+    <form id="search-form">
+        <div class="input-group">
+            <input
+                type="text"
+                name="search"
+                id="search"
+                class="form-control"
+                placeholder="Search for a product"
+                required
+            />
+            <button class="btn btn-primary" type="submit" id="btn-search">
+                Search
+            </button>
+        </div>
+    </form>
+    <div id="products" class="mt-5 row"></div>
+</div>
+<div
+    class="modal fade"
+    id="wishlistModal"
+    tabindex="-1"
+    aria-labelledby="wishlistModalLabel"
+    aria-hidden="true"
+>
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="wishlistModalLabel">
+                    Add to Wishlist
+                </h5>
+                <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                ></button>
+            </div>
+            <div class="modal-body">
+                <ul id="userWishlists"></ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
