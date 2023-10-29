@@ -8,12 +8,11 @@ Live Application 👉 [Smart Commerce Live](https://smart-commerce.onrender.com/
 
 1. [Features](#features)
 2. [Technologies Used](#technologies-used)
-3. [Screenshots](#screenshots)
-4. [Getting Started](#getting-started)
+3. [Getting Started](#getting-started)
     - [Prerequisites](#prerequisites)
     - [Installation](#installation)
-5. [Usage](#usage)
-6. [Contact](#contact)
+4. [Usage](#usage)
+5. [Contact](#contact)
 
 ## Features ✨
 
@@ -33,8 +32,6 @@ Live Application 👉 [Smart Commerce Live](https://smart-commerce.onrender.com/
 -   PostgreSQL
 -   eBay API
 -   OpenAI API
-
-## Screenshots 📷
 
 ## Getting Started 🚀
 
