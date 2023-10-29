@@ -10,12 +10,7 @@
     - [Prerequisites](#prerequisites)
     - [Installation](#installation)
 6. [Usage](#usage)
-7. [Contributing](#contributing)
-8. [Code of Conduct](#code-of-conduct)
-9. [FAQ](#faq)
-10. [Contact](#contact)
-11. [Acknowledgments](#acknowledgments)
-12. [License](#license)
+7. [Contact](#contact)
 
 ## Introduction 🌟
 
@@ -44,20 +39,89 @@ Smart Commerce is an intuitive platform that leverages large language models (LL
 
 ## Getting Started 🚀
 
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+
 ### Prerequisites 🔍
+
+-   Basic knowledge of web technologies (HTML, CSS, JavaScript).
+-   Python environment setup.
+-   Access to eBay and OpenAI APIs.
 
 ### Installation 🛠️
 
+To set up the Smart Commerce project for development on your local machine, follow these steps:
+
+#### 1. Clone the Repository
+
+Clone the Smart Commerce repository to your local machine:
+
+```
+git clone https://github.com/yourusername/smart-commerce.git
+cd smart-commerce
+```
+
+#### 2. Set Up Python Virtual Environment (Optional but recommended)
+
+Create and activate a virtual environment:
+
+```
+python -m venv venv
+source venv/bin/activate
+
+For Windows 👇
+venv\Scripts\activate
+```
+
+#### 3. Install Required Python Packages
+
+Install all the necessary packages using pip:
+
+```
+pip install -r requirements.txt
+```
+
+#### 4. Set Up PostgreSQL
+
+-   Install PostgreSQL if not already installed.
+-   Create a new database for Smart Commerce.
+-   Configure database settings in your project settings or environment variables.
+
+#### 5. Set Environment Variables
+
+Configure the necessary environment variables:
+
+-   eBay API credentials.
+-   OpenAI API key.
+-   Database connection URI.
+-   Any other necessary variables.
+
+#### 6. Initialize the Database
+
+Run the script using the command below to initialize the database 👇
+
+```
+python seed.py
+```
+
+#### 7. Run the Application
+
+Start the Flask server:
+
+```
+flask run
+```
+
+#### 8. Access the Application
+
+Open a web browser and navigate to `http://localhost:5000`. You should see the Smart Commerce application running.
+
+Note: Adjust these steps as needed based on your specific setup and requirements.
+
 ## Usage 📚
-
-## Contributing 👥
-
-## Code of Conduct 📜
-
-## FAQ ❓
 
 ## Contact 📞
 
-## Acknowledgments 👏
-
-## License ©️
+If you would like to reach out to me, please do so on LinkedIn.
+<br>
+<br>
+[![Linkedin Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/anirudh-vadlamani/)
