@@ -2,7 +2,7 @@
 
 Smart Commerce is an intuitive platform that leverages large language models (LLMs) to provide users with a seamless shopping experience on eBay. By understanding natural language prompts, Smart Commerce bridges the gap between user intent and desired products.
 
-Live Application 👉 [Smart Commerce Live](https://smart-commerce.onrender.com/) 👈
+Live Application 👉 [Smart Commerce Live](https://smart-commerce-c674b9990c8a.herokuapp.com/) 👈
 
 ## Table of Contents 📋
 
