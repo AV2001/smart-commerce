@@ -49,7 +49,7 @@ def get_products_from_prompt(prompt):
     ]
 
     response = ChatCompletion.create(
-        model="gpt-3.5-turbo-0613",
+        model="gpt-4o-mini",
         messages=messages,
         functions=functions,
         function_call="auto",
